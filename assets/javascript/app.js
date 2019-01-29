@@ -3,45 +3,45 @@ var card = $("#quiz-area");
 // Question set
 var questions = [
   {
-    question: "What was the first full length CGI movie?",
-    answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
-    correctAnswer: "Toy Story"
+    question: "What are the Nissan Models?",
+    answers: ["Supra", "370Z", "Shaker", "Z4"],
+    correctAnswer: "370Z"
   },
   {
-    question: "Which of these is NOT a name of one of the Spice Girls?",
-    answers: ["Sporty Spice", "Fred Spice", "Scary Spice", "Posh Spice"],
-    correctAnswer: "Fred Spice"
+    question: "How many gears can a manual transmission have ?",
+    answers: ["Seven", "Five", "Six", "Four"],
+    correctAnswer: "Six"
   },
   {
-    question: "Which NBA team won the most titles in the 90s?",
-    answers: ["New York Knicks", "Portland Trailblazers", "Los Angeles Lakers", "Chicago Bulls"],
-    correctAnswer: "Chicago Bulls"
+    question: "Which car manafacutered the The FairLady ?",
+    answers: ["Toyota", "Honda", "Nissan", "Mercedes"],
+    correctAnswer: "Nissan"
   },
   {
-    question: "Which group released the hit song, 'Smells Like Teen Spirit'?",
-    answers: ["Nirvana", "Backstreet Boys", "The Offspring", "No Doubt"],
-    correctAnswer: "Nirvana"
+    question: "What other brand Nissan created as a luxury subsidary ?",
+    answers: ["Honda", "Infiniti", "GTR", "Audi"],
+    correctAnswer: "Infiniti"
   },
   {
-    question: "Which popular Disney movie featured the song, 'Circle of Life'?",
-    answers: ["Aladdin", "Hercules", "Mulan", "The Lion King"],
-    correctAnswer: "The Lion King"
+    question: "Nissan was also know as what other brand?",
+    answers: ["Fissan", "Gissan", "Datsun", "Pacsun"],
+    correctAnswer: "Datsun"
   },
   {
     question:
-      "Finish this line from the Fresh Prince of Bel-Air theme song: 'I whistled for a cab and when it came near, the license plate said...'",
-    answers: ["Dice", "Mirror", "Fresh", "Cab"],
-    correctAnswer: "Fresh"
+      "Nissan headquarters are situated in which country",
+    answers: ["USA", "China", "Egpyt", "Japan"],
+    correctAnswer: "Japan"
   },
   {
-    question: "What was Doug's best friend's name?",
-    answers: ["Skeeter", "Mark", "Zach", "Cody"],
-    correctAnswer: "Skeeter"
+    question: "What was year was Nissan founded?",
+    answers: ["1953", "1991", "1933", "1999"],
+    correctAnswer: "1933"
   },
   {
-    question: "What was the name of the principal at Bayside High in Saved By The Bell?",
-    answers: ["Mr.Zhou", "Mr.Driggers", "Mr.Belding", "Mr.Page"],
-    correctAnswer: "Mr.Belding"
+    question: "What is the name of the Cheif ececutive of the company ?",
+    answers: ["Page Zhou", "Hung Pow", "Carlos Ghosn", "Carlos Bean"],
+    correctAnswer: "Carlos Ghosen"
   }
 ];
 
@@ -51,7 +51,7 @@ var timer;
 var game = {
   correct: 0,
   incorrect: 0,
-  counter: 120,
+  counter: 100,
 
   countdown: function() {
     game.counter--;
@@ -66,7 +66,7 @@ var game = {
     timer = setInterval(game.countdown, 1000);
 
     $("#sub-wrapper").prepend(
-      "<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>"
+      "<h2>Time Remaining: <span id='counter-number'>100</span> Seconds</h2>"
     );
 
     $("#start").remove();
